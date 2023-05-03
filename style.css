@@ -5,9 +5,8 @@ body {
 }
 
 body {
-    background: #eee;
+    background: #ddd;
     font-family: Inter;
-    font-size: 20px;
     margin: 0;
     padding: 0;
     cursor: none;
@@ -20,13 +19,17 @@ swiper-container {
 
 swiper-slide {
     text-align: center;
-    font-size: 18px;
     background: #fff;
+    color: #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-position: center;
     background-size: cover;
+}
+
+.swiper-cube .swiper-cube-shadow:before {
+    background: none!important;
 }
 
 #slide-0 {
@@ -41,7 +44,7 @@ swiper-slide {
     font-weight: 800;
 }
 
-#slide-0 h5 {
+#slide-0 h2 {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -53,24 +56,26 @@ swiper-slide {
     font-weight: 400;
 }
 
-#slide-1 {
-    /* background-image: url('./assets/bg-slide-1.jpg'); */
+#slide-1 #slide-1_1 {
+    background: rgb(255, 204, 127);
+    background: linear-gradient(135deg, rgba(255, 204, 127, 1) 45%, rgba(255, 255, 255, 1) 55%);
+}
+
+#slide-1 #slide-1_2 {
+    background: rgb(255, 204, 127);
+    background: linear-gradient(315deg, rgba(255, 204, 127, 1) 45%, rgba(255, 255, 255, 1) 55%);
 }
 
 #slide-1 h1 {
     color: #000;
-    font-size: 32px;
-    padding-top: 32px;
+    font-size: 48px;
+    padding-top: 48px;
     font-weight: 600;
 }
 
 #slide-1 img {
     width: 25vw;
     height: 25vw;
-}
-
-#slide-2 {
-    /* display: inline; */
 }
 
 #slide-2 h1 {
@@ -103,5 +108,33 @@ swiper-slide {
 }
 
 #slide-3_1 img {
+    width: 40%;
+}
+
+#slide-4 {
+    flex-direction: column;
+}
+
+#slide-4 h1 {
+    color: #000;
+    font-size: 64px;
+    padding-top: 64px;
+    font-weight: 800;
+}
+
+#slide-4 h2 {
+    color: #000;
+    font-size: 256px;
+    font-weight: 100;
+}
+
+#slide-4_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#slide-4_1 img {
     width: 40%;
 }
